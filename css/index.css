@@ -1,0 +1,13 @@
+#canvas-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+header,
+.navbar {
+  z-index: 2;
+}
+#pixel-transition {
+  z-index: 9999;
+}

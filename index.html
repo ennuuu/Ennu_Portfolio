@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Ennu's Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/phx2usj.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="custom-cursor">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        class="cursor-shape"
+      >
+        <path
+          d="M12,17.27L18.18,21L17,14.64L22,9.73L15.45,8.5L12,2.5L8.55,8.5L2,9.73L7,14.64L5.82,21L12,17.27Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- HEADER / NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <ul class="left">
+          <li>
+            <a href="index.html">
+              <img src="assets/logo.svg" alt="Ennu" class="logo" />
+            </a>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <a href="about.html" id="about-link"
+              ><img
+                src="assets/about-me.svg"
+                alt="about me"
+                class="hero-section-button"
+            /></a>
+          </li>
+          <li>
+            <a href="work.html" id="work-link"
+              ><img
+                src="assets/work.svg"
+                alt="work"
+                class="hero-section-button"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="canvas-container"></div>
+
+    <!-- Pixel Transition Overlay -->
+    <div id="pixel-transition" aria-hidden="true"></div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
